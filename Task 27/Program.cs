@@ -6,10 +6,9 @@
 Console.Write("Введите число: ");
 string str = Console.ReadLine();
 int sum = 0;
-int i = 0;
-while (i < str.Length)
+for (int i = 0; i < str.Length; i++)
 {
-    sum = sum + str[i];
-    i++;
+    int currentNumber = int.Parse(str[i].ToString());
+    sum = sum + currentNumber;
 }
 Console.WriteLine($"Сумма цифр числа = {sum}");
